@@ -48,3 +48,62 @@
 //     }
 // }
 
+// const  frutas=["Manzana","Guinero"];
+
+// frutas.push("Fresa");
+// console.log(frutas);
+
+
+//Funciones declarativa
+// function numeroAleatorio(min, max){
+//      return Math.floor(Math.random() * (max - min)) + min;
+// }
+
+// console.log(numeroAleatorio(20,55))
+
+
+// //Funcion Expresiva
+// const Aleatorio = function(min, max){
+//     return    Math.floor(Math.random() * (max - min)) + min;
+// }
+
+// console.log(Aleatorio(10000,30000))
+
+// //Funcion de Flecha
+// const flecha = (min, max) =>{
+//     return    Math.floor(Math.random() * (max - min)) + min;
+// }
+
+// console.log(flecha(10000,30000))
+
+
+/**Clases en javaScript */
+
+const objecto = {
+    nombre: "Valiente",
+    duerme: true,
+    edad: 20,
+    enemigo: ["agua", "Perro"],
+    padres:{
+        nombre: "Juan",
+        Apellido: "Manuel",
+        Salud: true,
+        edad:30,
+    },
+
+    probando: function(){
+        console.log("nombre:"+this.nombre+"/n"+"Padres:"+this.padres.nombre);
+    }
+
+};
+
+// console.log(objecto.nombre);
+// console.log(objecto["duerme"]);
+
+//trabajando con objectos anidados
+// console.log(objecto.padres);
+// console.log(objecto.padres.nombre);
+// console.log(objecto.padres.Salud);
+
+
+objecto.probando();
